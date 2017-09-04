@@ -14,7 +14,7 @@ int main()
     int hoursinday = 24;
     int daysinyear = 365;
     int cyear = 2017;
-    int years = 8;
+    int years = 99;
     
     /*int fpop =  cpop + (birthpersec * secsinmin * minsinhour * hoursinday * daysinyear * years)
                 - (deathpersec * secsinmin * minsinhour * hoursinday * daysinyear * years)
