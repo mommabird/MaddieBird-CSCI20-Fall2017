@@ -3,6 +3,9 @@
  
  int main()
  {
+     cout<<"Baby Face"<<endl;
+     cout<<endl;
+     
      cout<<"     --&--    "<<endl;
      cout<<"   /       \\  "<<endl;
      cout<<"  /  _   _  \\ "<<endl;
@@ -10,5 +13,8 @@
      cout<<"  \\    `    / "<<endl;
      cout<<"   \\  (O)  / "<<endl;
      cout<<"     ----- "<<endl;
+     
+     cout<<endl;
+     cout<<"goo goo"<<endl;
      
  }
