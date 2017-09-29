@@ -13,14 +13,14 @@
  using namespace std;
  
  int RandNumGen(int minnum, int maxnum) {  // declare and define random number generating function
-     int randnum = 0.0; // initialize variables
-     int num1 = 0;
-     int num2 = 0;
+     int randnum = 0.0; // initialize local variable for random number storage
+     int num1 = 0; // initialize local temp variable
+     int num2 = 0; // initialize local temp variable
      
      num1 = minnum; //assign parameters to temp variables
      num2 = maxnum;
      
-     minnum = num2; //swap numbers
+     minnum = num2; //swap arguments  between parameters
      maxnum = num1;
      
      srand(time(0)); //unique seed so a new random number is generated
