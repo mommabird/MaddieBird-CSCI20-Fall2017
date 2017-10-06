@@ -1,11 +1,9 @@
 //created by Madeline Bird
 //created on Tuesday, Sep. 28, 2017
 /*Description: Lab 2.5 -  Classes and Mutator Functions
-  Creating functions that, when called, produces a random number between two 
-  values of the user’s choice and then converts the number into kilograms and 
-  then back into pounds.  Program must collect user input for the two 
-  values and use the swap function.*/
-//Citation and References: zybooks chapter 10
+  Creating a book class with 3 variables and calls for 5 objects that use the
+  mutator and accesor functions.*/
+//Citation and References: zybooks chapter 12
 
  #include <iostream> // include proper libraries
  #include <string> // include the string library for string variables
