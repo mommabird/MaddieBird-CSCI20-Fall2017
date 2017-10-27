@@ -114,3 +114,40 @@
     
     return 0;
 }
+
+/* Output
+    Running /home/ubuntu/workspace/lab35/lab35.cpp
+
+
+Temp in Kelvin: 2.07394e-317
+Temp in Celsius: -273.15
+Temp as Fahrenheit: -459.67
+
+
+Temp in Kelvin: 274
+Temp in Celsius: 0.85
+Temp as Fahrenheit: 33.53
+400.15
+
+
+Temp in Kelvin: 400.15
+Temp in Celsius: 127
+Temp as Fahrenheit: 260.6
+32
+
+
+Temp in Kelvin: 305.15
+Temp in Celsius: 32
+Temp as Fahrenheit: 89.6
+32
+
+
+Temp in Kelvin: 273.15
+Temp in Celsius: 0
+Temp as Fahrenheit: 32
+
+
+Process exited with code: 0
+
+*/
+
