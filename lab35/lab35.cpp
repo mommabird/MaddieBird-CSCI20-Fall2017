@@ -21,21 +21,21 @@
         TemperatureConverter(double kelvinin); //overload constructor doesn't allow Kelvin < 0
         
      private:
-        double Kelvin_; //declare the Kelvin variable
+        double kelvin_; //declare the Kelvin variable
  };
  
  TemperatureConverter::TemperatureConverter () { // default constructor
-     double Kelvin_ = 0.0; // default Kelvin
+     double kelvin_ = 0.0; // default Kelvin
      
      return;
  }
  
  TemperatureConverter::TemperatureConverter (double kelvinin) { // overload constructor
      if (kelvinin < 0.0) {// if input < 0, sets Kelvin to 0
-         Kelvin_ = 0.0;
+         kelvin_ = 0.0;
      }
      else {
-         Kelvin_ = kelvinin;// otherwise stores input in Kelvin class variable
+         kelvin_ = kelvinin;// otherwise stores input in Kelvin class variable
      }
      
      return;
@@ -43,46 +43,46 @@
  
  void TemperatureConverter::SetTempFromKelvin(double kelvinin) { // mutator function-sets Kelvin to input
      if (kelvinin < 0.0) {// doesn't allow value < 0
-         Kelvin_ = 0.0;
+         kelvin_ = 0.0;
      }
      else {
-         Kelvin_ = kelvinin;
+         kelvin_ = kelvinin;
      }
  }
  
  void TemperatureConverter::SetTempFromCelsius(double celsiusin) { // mutator - converts celsius to Kelvin
      if(celsiusin < -273.15) {// doesn't allow value < -273.15
-         Kelvin_ = 0;
+         kelvin_ = 0;
      }
      else {
-         Kelvin_ = celsiusin + 273.15; // Kelvin = C + 273.15
+         kelvin_ = celsiusin + 273.15; // Kelvin = C + 273.15
      }
  }
  
  void TemperatureConverter::SetTempFromFahrenheit (double fahrenin) { //mutator - converts Fahrenheit to Kelvin
      if(fahrenin < -459.67){// doesn't allow value < -459.67
-         Kelvin_ = 0;
+         kelvin_ = 0;
      }
      else {
-         Kelvin_ = ((5 * (fahrenin - 32)) / 9) + 273.15;
+         kelvin_ = ((5 * (fahrenin - 32)) / 9) + 273.15;
          //Kelvin = ((5 * (f - 32)) / 9) + 273.15
      }
  }
  
  double TemperatureConverter::GetTempFromKelvin() {// accessor for Kelvin value
-     return Kelvin_; // returns Kelvin
+     return kelvin_; // returns Kelvin
  }
  
  double TemperatureConverter::GetTempAsCelsius () {// accessor for Celsius value
      double Celsius_ = 0; // declares local variable for Celsius
-     Celsius_ = Kelvin_ - 273.15; //sets Celsius = K - 273.15
+     Celsius_ = kelvin_ - 273.15; //sets Celsius = K - 273.15
      
      return Celsius_; // returns Celsius
  }
  
  double TemperatureConverter::GetTempAsFahrenheit() {// accessor for Fahrenheit value
      double Fahren_ = 0; // declares local variable for Fahrenheit
-     Fahren_ = (((Kelvin_ - 273.15) * 9) / 5) + 32; //sets Fahrenheit = (((K - 273.15) * 9) / 5) + 32
+     Fahren_ = (((kelvin_ - 273.15) * 9) / 5) + 32; //sets Fahrenheit = (((K - 273.15) * 9) / 5) + 32
      
      return Fahren_; //returns Fahrenheit
  }
@@ -93,27 +93,7 @@
      cout << "Temp as Fahrenheit: " << GetTempAsFahrenheit() << endl; // uses accessor to print Fahrenheit
  }
  
- int main () {
-    TemperatureConverter temp1; //testing default constructor
-    TemperatureConverter temp2(274); //testing overloaded constructor
-    
-    temp1.PrintTemperatures();
-    temp2.PrintTemperatures();
-    
-    temp1.SetTempFromKelvin(400.15); //testing mutator function
-    cout<<temp1.GetTempFromKelvin()<<endl;//testing accessor function
-    temp1.PrintTemperatures();
-    
-    temp2.SetTempFromCelsius(32); //testing other functions
-    cout<<temp2.GetTempAsCelsius()<<endl;
-    temp2.PrintTemperatures();
-    
-    temp2.SetTempFromFahrenheit(32);
-    cout<<temp2.GetTempAsFahrenheit()<<endl;
-    temp2.PrintTemperatures();
-    
-    return 0;
-}
+
 
 /* Output
     Running /home/ubuntu/workspace/lab35/lab35.cpp
