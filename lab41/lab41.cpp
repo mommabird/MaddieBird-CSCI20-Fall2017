@@ -28,29 +28,37 @@
  
  ArrayTools::ArrayTools(){
      size_ = 10;
-     array_[size_] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+     int i = 0;
+     
+     for (i = 0; i < size_; i++) {
+         array_[i] = 0;
+     }
  }
  
  ArrayTools::ArrayTools(int myArray[], int SIZE){
      size_ = SIZE;
-     array_[size_] = myArray[SIZE];
+     int i = 0;
+     
+     for (i = 0; i < size_; i++) {
+         array_[i] = myArray[i];
+     }
  }
  
  int ArrayTools::Find_min(int startnum, int endnum){
-     int minVal = array_[startnum-1];        // Smallest so far
+     int minval = array_[startnum];        // Smallest so far
      int i = 0;
    
-     for (i = startnum-1; i < endnum-1; ++i) {
-         if (array_[i] < minVal) {
-            minVal = array_[i];
+     for (i = startnum; i < endnum; ++i) {
+         if (array_[i] < minval) {
+            minval = array_[i];
          }
      }
      
-     return minVal;
+     return minval;
  }
  
  void ArrayTools::Print(){
-     cout << "Min: " << Find_min(startnum, endnum) << endl;
+     cout << "Min: " << minval << endl;
  }
  
  
