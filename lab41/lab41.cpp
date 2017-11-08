@@ -1,6 +1,6 @@
 //created by Madeline Bird
 //created on Tuesday, October 31, 2017
-/*Description: Lab 4.1 Single Arrays
+/*Description: Lab 4.2 Parallel Arrays
   Using arrays appropriately within a class.*/
 //Citation and References: 
 
