@@ -1,7 +1,8 @@
 //created by Madeline Bird
-//created on Tuesday, November 14, 2017
-/*Description: Lab 4.4 C-Strings
-  Using arrays in Strings to collect names and create user names.*/
+//created on Thursday, November 16, 2017
+/*Description: Lab 4.6 File Input/Output
+  Using fstream to read in a file of student grades and output a student's 
+  transcript to and HTML page*/
 //Citation and References: 
 
  #include <iostream> // include proper libraries
@@ -48,7 +49,7 @@
        cout << fname.substr(0,10);
    }
    else {
-       cout << fname;
+       cout << fname <<;
    }
    if (lname.length() > 20) {
        cout << lname.substr(0,20);

@@ -1,0 +1,38 @@
+Name: Suzy Cue
+Number of Courses: 4
+Hours  Grade
+    3      A
+    3      A
+    3      A
+    3      B
+GPA: 3.75
+
+Name: Joe Joseph
+Number of Courses: 4
+Hours  Grade
+    4      D
+    3      C
+    3      B
+    3      C
+GPA: 1.92
+
+Name: Jillian Smith
+Number of Courses: 5
+Hours  Grade
+    4      C
+    3      C
+    4      C
+    3      B
+    3      C
+GPA: 2.18
+
+Name: Jillian Smith
+Number of Courses: 5
+Hours  Grade
+    4      C
+    3      C
+    4      C
+    3      B
+    3      C
+GPA: 2.18
+
